@@ -3,7 +3,7 @@
 Il microcontrollore utilizzato in questa esecitazione è un microcontrollore a 32 bit Tensilica montato sulla board "AZDelivery ESP32 nodeMCU" 
 Il uP consente connessioni Bluetooth tradizionali e Low energy.Per inviare dati si utilizza l'applicazione [serial BlueTooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal&gl=US)
 
-[![pinout esp32](https://github.com/davidedifilippo/BT_serial_tx_rx/blob/main/AZDelivery_esp32_pinout.png "AzDelivery esp32 nodemcu pinout")
+![pinout esp32](https://github.com/davidedifilippo/BT_serial_tx_rx/blob/main/AZDelivery_esp32_pinout.png "AzDelivery esp32 nodemcu pinout")
 
 
 ## Programmazione 
