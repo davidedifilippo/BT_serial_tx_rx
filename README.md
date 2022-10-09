@@ -19,31 +19,31 @@ Creo un oggetto che rappresenti il modulo Hardware BT:
         
 Imposto l'interfaccia di comunicazione seriale per il debug dell'applicazione:
 
-Serial.begin(9600);
+        Serial.begin(9600);
 
 Imposto l'interfaccia di comunicazione radio Bluetooth:
   
-  if(!SerialBT.begin("ESP32_Ing_DiFi")){
-    Serial.println("An error occurred initializing Bluetooth");
-    while(1);
-  }
+      if(!SerialBT.begin("ESP32_Ing_DiFi")){
+          Serial.println("An error occurred initializing Bluetooth");
+          while(1);
+      }
 
 Nel caso che l'interfaccia radio BT non funioni il programa si blocca dopo aver stampato un messaggio di errore.
 
 Se invece l'inizializzazione dell'interfaccia BT ha avuto successo resto in ascolto di connessioni:
 
-Serial.println("Listening....");
+      Serial.println("Listening....");
 
 
 ## Fase di loop 
 
 Ad ogni ciclo controllo se ci sono dati nel buffer di ricezione dell'interfaccia radio BT tramite il metodo:
 
-SerialBT.available()
+      SerialBT.available()
 
 che resituisce il numero di caratteri nel buffer di ricezione. Se ci sono caratteri eseguo una lettura:
 
-int c = SerialBT.read();
+      int c = SerialBT.read();
 
 la lettura restituisce un intero.
 
